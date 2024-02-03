@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Assignment 1 (HTML)</title>
+        <meta name="description" content="GDSC EGYPT Web Development Track's Assignment 1 (HTML)" />
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Application For Permission To Get A Day Off</h1>
+        <p><strong>Note:</strong> is to be completed at last 21 days prior to data</p>
+        <form action="#">
+            <fieldset>
+                <legend><b>Personal Details</b></legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name here"><br>
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter address here"><br>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email here"><br>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number here" value="0"><br>
+                <br>
+                <p>Gender</p>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <br>
+                <label for="endofexecuse">End of Execuse Date:</label>
+                <input type="date" id="endofexecuse" name="endofexecuse"><br>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <p>Check all reasons</p>
+                <input type="checkbox" id="reason_1" name="reason_1" value="cold">
+                <label for="reason_1">I have Cold</label><br>
+                <input type="checkbox" id="reason_2" name="reason_2" value="family_vac">
+                <label for="reason_2">I have a Family Vacation</label><br>
+                <input type="checkbox" id="reason_3" name="reason_3" value="sick">
+                <label for="reason_3">I need to go to a doctor</label><br>
+                <input type="checkbox" id="reason_4" name="reason_4" value="day_off">
+                <label for="reason_4">I work full-time and I deserve a day off</label><br>
+                <input type="checkbox" id="reason_5" name="reason_5" value="parents_sick">
+                <label for="reason_5">My parents are sick</label><br>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Customers' table</b></legend>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th style="width: 50%;">Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mohamed Ezzat</td>
+                        <td>19</td>
+                        <td><button>Remove</button> <button>Edit</button></td>
+                    </tr>
+                </table>
+            </fieldset><br>
+            <fieldset>
+                <legend><b>Essay Section</b></legend>
+                <p>In 50 words or more, explain why you want to get a day off</p>
+                <label for="papers">Upload any papers needed:</label>
+                <input type="file" id="papers" name="papers"><br>
+                <br>
+            </fieldset>
+            <input type="submit" value="Send Your Application">
+        </form>
+    </body>
+</html>
